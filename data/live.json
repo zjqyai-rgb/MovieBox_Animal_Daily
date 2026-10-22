@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T09:00:01+00:00",
+ "updated": "2026-10-22T09:18:24+00:00",
  "live": [
   {
    "name": "explore.org Live Nature Cams",
@@ -10,42 +10,42 @@
     {
      "id": "J7ZrIDvqlic",
      "title": "LIVE Brooks Falls - Katmai National Park, Alaska 2026 | explore.org",
-     "viewers": "489"
+     "viewers": "466"
     },
     {
      "id": "RhP-_jX8-Zs",
      "title": "LIVE Anan Bear Cam: Lower Falls & Caves – Alaska | explore.org",
-     "viewers": "6"
+     "viewers": "4"
     },
     {
      "id": "0P_LBKqVbfs",
      "title": "LIVE Elephant Cam: Tembe Elephant Park - South Africa - Africam | explore.org",
-     "viewers": "54"
+     "viewers": "57"
     },
     {
      "id": "Fz6sl9YJZE0",
      "title": "Underwater Manatee Cam At Homosassa Springs | Fall in love with the beloved sea cows! | explore.org",
-     "viewers": "12"
+     "viewers": "11"
     },
     {
      "id": "GGIE1E-kaMQ",
      "title": "Decorah Eagles - North Nest - 4k powered by EXPLORE.org",
-     "viewers": "5"
+     "viewers": "2"
     },
     {
      "id": "5e4lsEe4Vew",
      "title": "International Wolf Center North Camera powered by EXPLORE.org",
-     "viewers": "15"
+     "viewers": "13"
     },
     {
      "id": "DHUnz4dyb54",
      "title": "Tropical Reef Camera powered by EXPLORE.org",
-     "viewers": "98"
+     "viewers": "102"
     },
     {
      "id": "-m_nQT62B4Y",
      "title": "Kitten Rescue Cat Cam powered by EXPLORE.org",
-     "viewers": "100"
+     "viewers": "92"
     }
    ],
    "ok": true
@@ -64,7 +64,7 @@
     {
      "id": "Mm_zVDDUeNA",
      "title": "Northern Royal Albatross Cam - NZ Dept. of Conservation #RoyalCam | Cornell Lab",
-     "viewers": "33"
+     "viewers": "39"
     },
     {
      "id": "0xFARCdZ3vA",
@@ -74,17 +74,17 @@
     {
      "id": "afsaYKQ3vac",
      "title": "Cornell Red-tailed Hawks Live Cam - #CornellHawks | Cornell Lab",
-     "viewers": "4"
+     "viewers": "2"
     },
     {
      "id": "x10vL6_47Dw",
      "title": "🔴 Live Cornell Lab FeederWatch Cam 🔴 at Sapsucker Woods",
-     "viewers": "182"
+     "viewers": "189"
     },
     {
      "id": "WtoxxHADnGk",
      "title": "Live Tropical Birds at the Panama Fruit Feeder Cam at Canopy Lodge | Cornell Lab",
-     "viewers": "14"
+     "viewers": "15"
     }
    ],
    "ok": true
@@ -98,7 +98,7 @@
     {
      "id": "EG4nVb4pL6o",
      "title": "LIVE at the waterhole - 22 October 2026",
-     "viewers": "1"
+     "viewers": "26"
     },
     {
      "id": "HRO9PwoduE8",
@@ -117,22 +117,22 @@
     {
      "id": "QL0FuXqD1Fk",
      "title": "Namibia: Kwando river live stream",
-     "viewers": "5"
+     "viewers": "3"
     },
     {
      "id": "ME0dPuBtzug",
      "title": "Namibia: Live stream in the Kalahari Desert",
-     "viewers": "7"
+     "viewers": "6"
     },
     {
      "id": "AeMUdOPFcXI",
      "title": "Namibia: Live stream at the Okaukuejo waterhole in Etosha National Park, Namibia",
-     "viewers": "139"
+     "viewers": "148"
     },
     {
      "id": "ydYDqZQpim8",
      "title": "Namibia: Live stream in the Namib Desert",
-     "viewers": "484"
+     "viewers": "476"
     }
    ],
    "ok": true
@@ -146,7 +146,7 @@
     {
      "id": "SUXPnIEpbn4",
      "title": "Panda 24/7 HD Live At Chengdu Panda Base",
-     "viewers": "47"
+     "viewers": "52"
     }
    ],
    "ok": true
@@ -165,17 +165,17 @@
     {
      "id": "zL68biE6wAs",
      "title": "Live Moon Jelly Cam | Monterey Bay Aquarium",
-     "viewers": "42"
+     "viewers": "39"
     },
     {
      "id": "eQ_foBERmzA",
      "title": "Live Jelly Cam | Monterey Bay Aquarium",
-     "viewers": "120"
+     "viewers": "122"
     },
     {
      "id": "n_GpVsz4nHU",
      "title": "Live Open Sea Cam | Monterey Bay Aquarium",
-     "viewers": "32"
+     "viewers": "31"
     },
     {
      "id": "fVa6-zCBR7A",
@@ -190,17 +190,17 @@
     {
      "id": "abbR-Ttd-cA",
      "title": "Live Sea Otter Cam | Monterey Bay Aquarium",
-     "viewers": "80"
+     "viewers": "93"
     },
     {
      "id": "w3LjpFhySTg",
      "title": "Live Kelp Forest Cam | Monterey Bay Aquarium",
-     "viewers": "67"
+     "viewers": "66"
     },
     {
      "id": "tEtg5Kg3voQ",
      "title": "Live Shark Cam | Monterey Bay Aquarium",
-     "viewers": "109"
+     "viewers": "100"
     }
    ],
    "ok": true
@@ -230,12 +230,12 @@
     {
      "id": "_KXHUb0wFRE",
      "title": "Sea Otter Cam 2 | Vancouver Aquarium",
-     "viewers": "92"
+     "viewers": "76"
     },
     {
      "id": "9mg9PoFEX2U",
      "title": "Sea Otter Cam | Vancouver Aquarium",
-     "viewers": "206"
+     "viewers": "190"
     }
    ],
    "ok": true
@@ -319,9 +319,14 @@
    "kind": "live",
    "streams": [
     {
+     "id": "Zns4k_dICzs",
+     "title": "🔴 24/7 LIVE: Wildlife & Nature Documentaries | Love Nature",
+     "viewers": "25"
+    },
+    {
      "id": "QhahoVG0BfI",
      "title": "🔴 24/7 LIVE: Orangutan Jungle School | Love Nature",
-     "viewers": "10"
+     "viewers": "13"
     }
    ],
    "ok": true
@@ -335,7 +340,7 @@
     {
      "id": "34tfyR8mO9k",
      "title": "🔴 WATCH LIVE: FUNNIEST PET VIDEOS 24/7 🤣",
-     "viewers": "56"
+     "viewers": "69"
     }
    ],
    "ok": true
@@ -926,6 +931,11 @@
    "kind": "shows",
    "videos": [
     {
+     "id": "EG4nVb4pL6o",
+     "title": "LIVE at the waterhole - 22 October 2026",
+     "published": "2026-10-20T10:54:59+00:00"
+    },
+    {
      "id": "oqF36LXCo_Q",
      "title": "The wild five - SafariLIVE Sunset - 21 October 2026",
      "published": "2026-10-21T19:30:29+00:00"
@@ -954,11 +964,6 @@
      "id": "pZ5ld1TGZrQ",
      "title": "LIVE at the waterhole - 20 October 2026",
      "published": "2026-10-21T05:49:58+00:00"
-    },
-    {
-     "id": "EG4nVb4pL6o",
-     "title": "LIVE at the waterhole - 22 October 2026",
-     "published": "2026-10-20T10:54:59+00:00"
     },
     {
      "id": "rDxVIpRcnGo",
