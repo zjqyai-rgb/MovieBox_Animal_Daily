@@ -21,7 +21,8 @@ const KEYWORDS = [
   ["wildlife", /\b(bear|wolf|wolves|elephant|lion|safari|waterhole|savanna|africa|namib|kalahari|orangutan|leopard)s?\b/i],
 ];
 
-// Free, ad-supported 24/7 animal channels. These services don't allow embedding, so we link out.
+// Free TV apps with even more animal channels. They don't allow other sites to play their channels,
+// so these open on the service's own site (the playable 24/7 channels come from data/live.json "tv").
 const FREE_TV = [
   {
     service: "Pluto TV", url: "https://pluto.tv/us/watch/live-tv/category/animals-nature-us/", region: "US & many countries",
@@ -88,22 +89,30 @@ async function loadData() {
   const res = await fetch(`data/live.json?t=${Date.now()}`);
   if (!res.ok) throw new Error("Stream list missing — run: python3 scripts/update_streams.py");
   const raw = await res.json();
+  const n = (v) => parseFloat(String(v).replace(/,/g, "")) * (/K/.test(v) ? 1e3 : /M/.test(v) ? 1e6 : 1) || 0;
+  const byViewers = (a, b) => n(b.viewers) - n(a.viewers);
+  const tv = (raw.tv || [])
+    .filter((c) => (c.streams || []).length)
+    .map((c) => ({
+      id: c.id, name: c.name, category: c.category,
+      streams: c.streams
+        .map((s) => ({ ...s, live: true, tv: true, title: cleanTitle(s.title), channel: c.name, channelId: c.id, category: c.category }))
+        .sort(byViewers),
+    }));
   const live = raw.live.flatMap((c) =>
     (c.streams || []).map((s) => ({
       ...s, live: true, title: cleanTitle(s.title), channel: c.name, channelId: c.id,
       category: categorize(s.title, c.category),
     }))
   );
-  // Most-watched first.
-  const n = (v) => parseFloat(String(v).replace(/,/g, "")) * (/K/.test(v) ? 1e3 : /M/.test(v) ? 1e6 : 1) || 0;
-  live.sort((a, b) => n(b.viewers) - n(a.viewers));
+  live.sort(byViewers); // most-watched first
   const shows = raw.shows
     .filter((c) => (c.videos || []).length)
     .map((c) => ({
       ...c,
       videos: c.videos.map((v) => ({ ...v, live: false, channel: c.name, channelId: c.id, category: c.category })),
     }));
-  DATA = { updated: raw.updated, live, shows, all: [...live, ...shows.flatMap((c) => c.videos)] };
+  DATA = { updated: raw.updated, tv, live, shows, all: [...tv.flatMap((c) => c.streams), ...live, ...shows.flatMap((c) => c.videos)] };
   document.getElementById("updated").textContent = `Stream list updated ${timeAgo(raw.updated)}.`;
   return DATA;
 }
@@ -128,15 +137,15 @@ function bindFav(el, item) {
 // ---------- Components ----------
 function tile(item) {
   return `
-    <a class="tile" href="#/watch/${encodeURIComponent(item.id)}">
+    <a class="tile" href="${item.href || `#/watch/${encodeURIComponent(item.id)}`}">
       <div class="thumb">
         <img loading="lazy" src="${thumb(item.id, item.live)}" alt="" onerror="this.src='${thumb(item.id, false)}'" />
-        ${item.live ? `<span class="live-badge">● LIVE</span>` : ""}
+        ${item.tv ? `<span class="live-badge tv">📺 24/7 TV</span>` : item.live ? `<span class="live-badge">● LIVE</span>` : ""}
         ${item.live && item.viewers ? `<span class="viewers">${esc(item.viewers)} watching</span>` : ""}
         <span class="cat-icon" title="${esc(CATEGORIES[item.category]?.label || "")}">${CATEGORIES[item.category]?.icon || "🐾"}</span>
       </div>
       <h3 title="${esc(item.title)}">${esc(item.title)}</h3>
-      <small>${esc(item.channel)}${item.published ? ` · ${timeAgo(item.published)}` : ""}</small>
+      <small>${esc(item.subtitle || item.channel)}${item.published ? ` · ${timeAgo(item.published)}` : ""}</small>
     </a>`;
 }
 
@@ -198,7 +207,7 @@ async function homeView() {
         <span class="live-badge static">● LIVE NOW</span>
         <h1>${esc(featured.title)}</h1>
         <p class="muted">${esc(featured.channel)}${featured.viewers ? ` · ${esc(featured.viewers)} watching` : ""}</p>
-        <p>The most-watched animal stream right now. ${d.live.length} live animal streams are on air — pick one below.</p>
+        <p>The most-watched animal cam right now. ${d.tv.length} animal TV channels and ${d.live.length} live cams are on air — pick one below.</p>
         <div class="actions">
           <a class="btn btn-primary" href="#/watch/${encodeURIComponent(featured.id)}">▶ Watch with sound</a>
           <a class="btn btn-ghost" href="#/live">See all ${d.live.length} live</a>
@@ -206,10 +215,10 @@ async function homeView() {
       </div>
     </section>` : ""}
     ${chips("#/live", "")}
+    ${row("📺 24/7 Animal TV Channels", tvTiles(d), "#/tv")}
     ${row("🔴 Live Now — Most Watched", d.live.slice(0, 16), "#/live")}
     ${["wildlife", "ocean", "birds", "zoo", "pets"].map((k) => row(`${CATEGORIES[k].icon} Live ${CATEGORIES[k].label}`, byCat(k), `#/live?cat=${k}`)).join("")}
     ${d.shows.slice(0, 8).map((c) => row(`📺 ${esc(c.name)} — Latest`, c.videos, `#/show/${c.id}`)).join("")}
-    <section class="section"><h2>📡 Free 24/7 Animal TV Channels <a href="#/tv">See all →</a></h2>${freeTvHTML()}</section>
     ${d.shows.slice(8).map((c) => row(`📺 ${esc(c.name)} — Latest`, c.videos, `#/show/${c.id}`)).join("")}
     <section class="section"><h2>🌍 More Official Live Cam Sites</h2>${camSitesHTML()}</section>`;
 }
@@ -265,6 +274,7 @@ async function watchView(id) {
   loading();
   const d = await loadData();
   const item = d.all.find((v) => v.id === id) || favs().find((f) => f.id === id) || { id, title: "Animal stream", channel: "", live: false };
+  if (item.tv && item.channelId) return location.replace(`#/tv/${item.channelId}?v=${encodeURIComponent(id)}`);
   document.title = `${item.title} — MovieBox_Animal_Daily`;
   const pool = item.live ? d.live : d.all.filter((v) => !v.live);
   const related = [
@@ -304,13 +314,76 @@ async function watchView(id) {
   bindFav(document.getElementById("favBtn"), item);
 }
 
-function tvView() {
+const tvTiles = (d) =>
+  d.tv.map((c) => ({ ...c.streams[0], title: c.name, subtitle: c.streams[0].title, href: `#/tv/${c.id}` }));
+
+// TV-style player: one big screen plus a channel guide. ↑/↓ switch channels.
+async function tvView(channelId, query) {
+  loading();
+  const d = await loadData();
+  const apps = `<section class="section"><h2>📱 More Channels on Free TV Apps</h2>
+    <p class="hint">These services carry extra animal channels but don't let other websites play them, so they open on their own site.</p>
+    ${freeTvHTML()}</section>`;
+  if (!d.tv.length) {
+    app.innerHTML = `<h1 class="page-title">📺 24/7 Animal TV</h1><p class="empty">No TV channels are on air right now — try the <a href="#/live">live cams</a>.</p>${apps}`;
+    return;
+  }
+  const channel = d.tv.find((c) => c.id === channelId) || d.tv[0];
+  const stream = channel.streams.find((s) => s.id === query.get("v")) || channel.streams[0];
+  document.title = `${channel.name} — 24/7 Animal TV — MovieBox_Animal_Daily`;
+
   app.innerHTML = `
-    <h1 class="page-title">📡 Free 24/7 Animal TV Channels</h1>
-    <p class="hint page-hint">Real TV channels about animals, free with ads — no subscription. They open on each service's own site or app.</p>
-    <section class="section">${freeTvHTML()}</section>
-    <section class="section"><h2>🌍 Official Live Cam Sites</h2>${camSitesHTML()}</section>`;
+    <h1 class="page-title">📺 24/7 Animal TV <small class="muted">${d.tv.length} channels on air · use ↑ ↓ to switch</small></h1>
+    ${chips("#/tv", "")}
+    <div class="tv-layout">
+      <div>
+        <div class="player">
+          <iframe src="${embed(stream.id)}" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="now-playing">
+          <span class="live-badge static">● ON AIR</span>
+          <h2>${CATEGORIES[channel.category]?.icon || "📺"} ${esc(channel.name)}</h2>
+          <p>${esc(stream.title)}${stream.viewers ? ` <span class="muted">· ${esc(stream.viewers)} watching</span>` : ""}</p>
+          <div class="actions">
+            <button class="btn btn-ghost" id="favBtn"></button>
+            <a class="btn btn-ghost" href="https://www.youtube.com/watch?v=${encodeURIComponent(stream.id)}" target="_blank" rel="noopener">Open on YouTube ↗</a>
+          </div>
+        </div>
+        ${channel.streams.length > 1 ? `
+          <h3 class="alt-title">More streams on ${esc(channel.name)} (${channel.streams.length})</h3>
+          <div class="row alt-row">${channel.streams.map((s) => tile({ ...s, href: `#/tv/${channel.id}?v=${s.id}` })).join("")}</div>` : ""}
+      </div>
+      <aside class="guide">
+        <h2>Channel Guide</h2>
+        ${d.tv.map((c, i) => `
+          <a class="guide-item ${c.id === channel.id ? "on" : ""}" href="#/tv/${c.id}">
+            <span class="ch-num">${String(i + 1).padStart(2, "0")}</span>
+            <img loading="lazy" src="${thumb(c.streams[0].id, true)}" alt="" onerror="this.src='${thumb(c.streams[0].id, false)}'" />
+            <div><strong>${esc(c.name)}</strong><small>${esc(c.streams[0].title)}</small></div>
+          </a>`).join("")}
+      </aside>
+    </div>
+    ${apps}`;
+  bindFav(document.getElementById("favBtn"), stream);
+  // Filter chips on this page jump to the first channel in that category.
+  app.querySelectorAll(".chips .chip").forEach((a) => {
+    const cat = new URLSearchParams(a.getAttribute("href").split("?")[1] || "").get("cat");
+    const first = cat && d.tv.find((c) => c.category === cat);
+    if (cat && !first) a.remove();
+    else a.setAttribute("href", first ? `#/tv/${first.id}` : `#/tv/${d.tv[0].id}`);
+    a.classList.toggle("on", !!first && channel.category === cat);
+  });
 }
+
+window.addEventListener("keydown", (e) => {
+  if (!DATA || !location.hash.startsWith("#/tv") || /INPUT|TEXTAREA/.test(e.target.tagName)) return;
+  if (e.key !== "ArrowUp" && e.key !== "ArrowDown") return;
+  e.preventDefault();
+  const current = location.hash.split("?")[0].split("/")[2];
+  const i = Math.max(0, DATA.tv.findIndex((c) => c.id === current));
+  const next = DATA.tv[(i + (e.key === "ArrowDown" ? 1 : -1) + DATA.tv.length) % DATA.tv.length];
+  location.hash = `#/tv/${next.id}`;
+});
 
 async function searchView(q) {
   loading();
@@ -344,7 +417,7 @@ async function router() {
   const query = new URLSearchParams(qs);
   document.title = "MovieBox_Animal_Daily — Free Live Animal Cams, Shows & Channels";
   document.querySelectorAll(".nav a").forEach((a) =>
-    a.classList.toggle("active", a.getAttribute("href") === `#${path}` || (a.getAttribute("href") === "#/" && !route)));
+    a.classList.toggle("active", a.getAttribute("href") === `#/${route}`));
   window.scrollTo(0, 0);
 
   try {
@@ -352,7 +425,7 @@ async function router() {
     else if (route === "live") await liveView(query);
     else if (route === "shows") await showsView(query);
     else if (route === "show" && arg) await showView(arg);
-    else if (route === "tv") tvView();
+    else if (route === "tv") await tvView(arg, query);
     else if (route === "search" && arg) await searchView(arg);
     else if (route === "favorites") favoritesView();
     else await homeView();

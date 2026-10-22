@@ -2,6 +2,7 @@
 """Refresh MovieBox_Animal_Daily's stream list.
 
 Reads data/sources.json and writes data/live.json with:
+  - the 24/7 streams currently on air on each "tv" YouTube channel (TV-style animal channels)
   - every animal live stream currently on air on each "live" YouTube channel
   - the latest full episodes / videos from each "shows" YouTube channel
 
@@ -89,7 +90,7 @@ def latest_videos(channel):
 
 def process(channel):
     try:
-        if channel["kind"] == "live":
+        if channel["kind"] in ("tv", "live"):
             channel = {**channel, "streams": live_streams(channel)}
         else:
             channel = {**channel, "videos": latest_videos(channel)}
@@ -104,7 +105,7 @@ def process(channel):
 
 def main():
     sources = json.loads(SOURCES.read_text())
-    channels = [{**c, "kind": kind} for kind in ("live", "shows") for c in sources["youtube"][kind]]
+    channels = [{**c, "kind": kind} for kind in ("tv", "live", "shows") for c in sources["youtube"][kind]]
     start = time.time()
     with ThreadPoolExecutor(max_workers=6) as pool:
         results = list(pool.map(process, channels))
@@ -113,18 +114,20 @@ def main():
     previous = {}
     if OUTPUT.exists():
         old = json.loads(OUTPUT.read_text())
-        previous = {(c["kind"], c["id"]): c for c in old.get("live", []) + old.get("shows", [])}
+        previous = {(c["kind"], c["id"]): c for k in ("tv", "live", "shows") for c in old.get(k, [])}
     results = [r if r["ok"] else previous.get((r["kind"], r["id"]), r) for r in results]
 
     data = {
         "updated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "tv": [r for r in results if r["kind"] == "tv"],
         "live": [r for r in results if r["kind"] == "live"],
         "shows": [r for r in results if r["kind"] == "shows"],
     }
     OUTPUT.write_text(json.dumps(data, indent=1, ensure_ascii=False))
+    n_tv = sum(len(c.get("streams", [])) for c in data["tv"])
     n_live = sum(len(c.get("streams", [])) for c in data["live"])
     n_vids = sum(len(c.get("videos", [])) for c in data["shows"])
-    print(f"Wrote {OUTPUT.relative_to(ROOT)}: {n_live} live streams, {n_vids} videos ({time.time() - start:.1f}s)")
+    print(f"Wrote {OUTPUT.relative_to(ROOT)}: {n_tv} TV channels, {n_live} live cams, {n_vids} videos ({time.time() - start:.1f}s)")
 
 
 if __name__ == "__main__":

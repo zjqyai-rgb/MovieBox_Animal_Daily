@@ -1,9 +1,10 @@
 # MovieBox_Animal_Daily 🐾
 
 A free website for live animal cams, animal shows and 24/7 animal TV channels.
-It hosts no video. Live cams and shows play through the official YouTube players of
-zoos, aquariums, conservation groups and networks. Free TV channels on Pluto TV,
-Samsung TV Plus, The Roku Channel, Tubi and Plex open on each service's own site.
+It hosts no video. 24/7 TV channels, live cams and shows all play on the site through the
+official YouTube players of networks, zoos, aquariums and conservation groups. Extra channels
+on Pluto TV, Samsung TV Plus, The Roku Channel, Tubi and Plex (which don't allow embedding)
+open on each service's own site.
 
 ## Run locally
 
@@ -21,8 +22,9 @@ Live cams come and go, so `data/live.json` should be refreshed regularly:
 python3 scripts/update_streams.py
 ```
 
-- **Add or remove channels:** edit `data/sources.json`. `live` channels are checked for
-  streams currently on air; `shows` channels contribute their latest 15 videos.
+- **Add or remove channels:** edit `data/sources.json`. `tv` channels are official 24/7
+  animal TV streams (shown in the 📺 24/7 TV player and channel guide); `live` channels are
+  checked for cams currently on air; `shows` channels contribute their latest 15 videos.
   Categories: `wildlife`, `ocean`, `birds`, `zoo`, `pets`, `kids`.
 - **On GitHub:** `.github/workflows/update-streams.yml` runs the script every 6 hours
   and commits the result (works with GitHub Pages).
