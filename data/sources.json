@@ -1,0 +1,46 @@
+{
+ "youtube": {
+  "live": [
+   { "name": "explore.org Live Nature Cams", "id": "UC-2KSeUU5SMCX6XLRD-AEvw", "category": "wildlife" },
+   { "name": "Cornell Lab Bird Cams", "id": "UCZXZQxS3d6NpR-eH_gdDwYA", "category": "birds" },
+   { "name": "WildEarth Safari Live", "id": "UCV6HJBZD_hZcIX9JVJ3dCXQ", "category": "wildlife" },
+   { "name": "NamibiaCam Waterhole", "id": "UC9X6gGKDv2yhMoofoeS7-Gg", "category": "wildlife" },
+   { "name": "iPanda", "id": "UCtEgLf0_j1vJLz0aNEdO2SQ", "category": "zoo" },
+   { "name": "Monterey Bay Aquarium", "id": "UCnM5iMGiKsZg-iOlIO2ZkdQ", "category": "ocean" },
+   { "name": "Aquarium of the Pacific", "id": "UCc5KdL1iltWLOE3pmgTmO8g", "category": "ocean" },
+   { "name": "Georgia Aquarium", "id": "UCCHvyiHdlh78vwUTHMw6NFQ", "category": "ocean" },
+   { "name": "Vancouver Aquarium", "id": "UCbzl-qtfTKY9QNgtnqmuyBw", "category": "ocean" },
+   { "name": "Shedd Aquarium", "id": "UCZJGWzdEFC9DqJX0igDaxcw", "category": "ocean" },
+   { "name": "National Aquarium", "id": "UCR0Y7aSZyj1QScYCMMHVgAA", "category": "ocean" },
+   { "name": "Tennessee Aquarium", "id": "UCfjM_SYJjO_UbMKaake95aw", "category": "ocean" },
+   { "name": "Friends of Big Bear Valley (Eagle Cam)", "id": "UCZVhPLWa6cDskOXAmRY2pgw", "category": "birds" },
+   { "name": "Raptor Resource Project", "id": "UCoC_-rIBtLCzAl5l-834jZQ", "category": "birds" },
+   { "name": "Animal Adventure Park", "id": "UCRn0uOg_BEjc9TKqOOB87pQ", "category": "zoo" },
+   { "name": "San Diego Zoo", "id": "UCC5NfQ6Mf0dq_eEwv4P_hWA", "category": "zoo" },
+   { "name": "Houston Zoo", "id": "UCqKNzUHmCrvZsFDzpAR3GjA", "category": "zoo" },
+   { "name": "Oregon Zoo", "id": "UC3oWOleSolsVhal5krntOlg", "category": "zoo" },
+   { "name": "Love Nature", "id": "UCRZPkuHwaoKwTP3CYPdVldg", "category": "wildlife" },
+   { "name": "The Pet Collective", "id": "UCPIvT-zcQl2H0vabdXJGcpg", "category": "pets" }
+  ],
+  "shows": [
+   { "name": "BBC Earth", "id": "UCwmZiChSryoWQCZMIQezgTg", "category": "wildlife" },
+   { "name": "Nat Geo Animals", "id": "UCDPk9MG2RexnOMGTD-YnSnA", "category": "wildlife" },
+   { "name": "Animal Planet", "id": "UCkEBDbzLyH-LbB2FgMoSMaQ", "category": "wildlife" },
+   { "name": "Animal Planet UK", "id": "UCXagz1VuH3xxO2qijAFW2Eg", "category": "wildlife" },
+   { "name": "Smithsonian Channel", "id": "UCWqPRUsJlZaDp-PVbqEch9g", "category": "wildlife" },
+   { "name": "Nature on PBS", "id": "UCkzTTu69cSxxab41OHrBfvQ", "category": "wildlife" },
+   { "name": "Love Nature", "id": "UCRZPkuHwaoKwTP3CYPdVldg", "category": "wildlife" },
+   { "name": "Free Documentary – Nature", "id": "UCQtW2oz8ec8pHjjxawujNjg", "category": "wildlife" },
+   { "name": "WildEarth", "id": "UCV6HJBZD_hZcIX9JVJ3dCXQ", "category": "wildlife" },
+   { "name": "Deep Look (PBS)", "id": "UC-3SbfTPJsL8fJAPKiVqBLg", "category": "wildlife" },
+   { "name": "Brave Wilderness", "id": "UC6E2mP01ZLH_kbAyeazCNdg", "category": "wildlife" },
+   { "name": "Robert E Fuller", "id": "UCU0LJ9et5Tb3m7COFzShgLg", "category": "birds" },
+   { "name": "Wildlife SOS", "id": "UClDVWIdbYk0mCnL9nkRHSxw", "category": "wildlife" },
+   { "name": "ZooBorns", "id": "UCGRiil9CODC8zaiwNXafMbg", "category": "zoo" },
+   { "name": "The Dodo", "id": "UCINb0wqPz-A0dV9nARjJlOQ", "category": "pets" },
+   { "name": "The Pet Collective", "id": "UCPIvT-zcQl2H0vabdXJGcpg", "category": "pets" },
+   { "name": "BBC Earth Kids", "id": "UCO_DaPp4ifhMAmiyybSLx9w", "category": "kids" },
+   { "name": "Nat Geo Kids", "id": "UCXVCgDuD_QCkI7gTKU7-tpg", "category": "kids" }
+  ]
+ }
+}
