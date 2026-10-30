@@ -441,3 +441,31 @@ document.getElementById("searchForm").addEventListener("submit", (e) => {
 });
 window.addEventListener("hashchange", router);
 router();
+
+// ---------- Visitor counter (free Abacus API, https://abacus.jasoncameron.dev) ----------
+// "visitors" counts each browser once; "visits" counts once per browser session.
+// Local previews only read the numbers, so testing doesn't inflate them.
+const COUNTER = "https://abacus.jasoncameron.dev";
+const COUNTER_NS = "zjqyai-moviebox-animal-daily";
+async function updateVisitors() {
+  const isLocal = /^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname);
+  const count = async (key, increment) => {
+    const res = await fetch(`${COUNTER}/${increment ? "hit" : "get"}/${COUNTER_NS}/${key}`);
+    if (res.status === 404) return 0; // nothing counted yet
+    if (!res.ok) throw new Error(`counter ${res.status}`);
+    return (await res.json()).value || 0;
+  };
+  try {
+    const newVisitor = !isLocal && !localStorage.getItem("counted_visitor");
+    const newVisit = !isLocal && !sessionStorage.getItem("counted_visit");
+    const [visitors, visits] = await Promise.all([count("visitors", newVisitor), count("visits", newVisit)]);
+    if (newVisitor) localStorage.setItem("counted_visitor", "1");
+    if (newVisit) sessionStorage.setItem("counted_visit", "1");
+    document.getElementById("visitorCount").textContent = visitors.toLocaleString();
+    document.getElementById("visitCount").textContent = visits.toLocaleString();
+    document.getElementById("visitors").hidden = false;
+  } catch {
+    // The counter is optional; the site works without it.
+  }
+}
+updateVisitors();
