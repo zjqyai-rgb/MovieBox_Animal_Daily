@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T13:57:46+00:00",
+ "updated": "2026-11-10T22:39:46+00:00",
  "tv": [
   {
    "name": "Love Nature: Predators",
@@ -10,12 +10,12 @@
     {
      "id": "YRIkyaX2in0",
      "title": "🔴 LIVE: Wildlife and Nature Documentaries | Love Nature: Predators",
-     "viewers": "21"
+     "viewers": "6"
     },
     {
      "id": "7ByKk5NPsRw",
      "title": "🔴 24/7 LIVE: Wildlife Showdown | Love Nature: Predators",
-     "viewers": "49"
+     "viewers": "45"
     }
    ],
    "ok": true
@@ -29,12 +29,12 @@
     {
      "id": "Zns4k_dICzs",
      "title": "🔴 24/7 LIVE: Wildlife & Nature Documentaries | Love Nature",
-     "viewers": "78"
+     "viewers": "68"
     },
     {
      "id": "QhahoVG0BfI",
      "title": "🔴 24/7 LIVE: Orangutan Jungle School | Love Nature",
-     "viewers": "21"
+     "viewers": "19"
     }
    ],
    "ok": true
@@ -48,17 +48,17 @@
     {
      "id": "Qp2BQr6BaPk",
      "title": "🔴 LIVE: Surviving Animal Rivalries | Animal Fight Night Livestream | Nat Geo Animals",
-     "viewers": "73"
+     "viewers": "68"
     },
     {
      "id": "R7Jfda-StTA",
      "title": "🔴 LIVE: Inside the World of Freaky Animals | Documentary Special Livestream | Nat Geo Animals",
-     "viewers": "15"
+     "viewers": "16"
     },
     {
      "id": "MiQe9ob9aDc",
      "title": "🔴 LIVE: Predator Battles: Lions vs Leopards vs Hyenas | Savage Kingdom Livestream | Nat Geo Animals",
-     "viewers": "539"
+     "viewers": "276"
     }
    ],
    "ok": true
@@ -72,7 +72,7 @@
     {
      "id": "Kjy3SevxRCk",
      "title": "🎣 River Monsters Biggest Catches & Best Moments 24/7",
-     "viewers": "221"
+     "viewers": "152"
     }
    ],
    "ok": true
@@ -83,16 +83,6 @@
    "category": "wildlife",
    "kind": "tv",
    "streams": [
-    {
-     "id": "ZX28vlBhz_0",
-     "title": "SafariLIVE Sunset - 10 November 2026 - AD FREE",
-     "viewers": ""
-    },
-    {
-     "id": "xR0ko25E65I",
-     "title": "SafariLIVE Sunset - Repeat - 10 November  2026",
-     "viewers": "169"
-    },
     {
      "id": "HRO9PwoduE8",
      "title": "WildEarth Channel - AD FREE",
@@ -110,7 +100,7 @@
     {
      "id": "34tfyR8mO9k",
      "title": "🔴 WATCH LIVE: FUNNIEST PET VIDEOS 24/7 🤣",
-     "viewers": "133"
+     "viewers": "110"
     }
    ],
    "ok": true
@@ -134,7 +124,7 @@
     {
      "id": "rl4Se29lLu0",
      "title": "📺 LIVE 24/7 DOGTV: Original Relaxing TV for Dogs | Videos for Dogs & Music to Relax Dogs 🐶",
-     "viewers": "66"
+     "viewers": "4"
     }
    ],
    "ok": true
@@ -148,97 +138,97 @@
     {
      "id": "OS94xU5WhrQ",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Cheerful Birds and Cutest Squirrels bring Nature Fun for Everyone",
-     "viewers": "397"
+     "viewers": "288"
     },
     {
      "id": "QaA-Y-CJ51A",
      "title": "🔴 24/7 LIVE CAT TV NO ADS😺  Beautiful Spring Day with Awesome Birds And Squirrels",
-     "viewers": "63"
+     "viewers": "45"
     },
     {
      "id": "u9jWAX9CrNM",
      "title": "🔴 24/7 LIVE CAT TV NO ADS😺  Birds And Squirrels Having Fun on a Rainy Day",
-     "viewers": "139"
+     "viewers": "108"
     },
     {
      "id": "GV9E4WHv5wg",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Bird Watching Extravaganza at Cozy Forest Nook Restaurant",
-     "viewers": "416"
+     "viewers": "291"
     },
     {
      "id": "tm3fMnPT6d8",
      "title": "🔴 24/7 LIVE CAT TV NO ADS😺 Beautiful Birds, Red Squirrels and Peaceful Nature",
-     "viewers": "870"
+     "viewers": "425"
     },
     {
      "id": "i15kpFZtD8Q",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Unlimited Fun with Wild Birds and Cutest Red Squirrels",
-     "viewers": "151"
+     "viewers": "88"
     },
     {
      "id": "-cTFcOqU_tE",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Countless Little Birds and their Squirrel Friends",
-     "viewers": "146"
+     "viewers": "72"
     },
     {
      "id": "HSF405hgL20",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Perfect Birds and Squirrels for Cats & Dogs to Watch 24/7",
-     "viewers": "86"
+     "viewers": "71"
     },
     {
      "id": "3qwLTBOZPmk",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Non-stop Little Birds and Squirrels Fun All Day Long (4K)",
-     "viewers": "238"
+     "viewers": "125"
     },
     {
      "id": "QaGCkKIPAZU",
      "title": "🔴 24/7 LIVE CAT TV NO ADS😺 Lots of Birds in Snow for Cats to Watch and Slap",
-     "viewers": "160"
+     "viewers": "126"
     },
     {
      "id": "wdJdNjMvW-Y",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Squirrels Birds & More -Tanuki Puppies and Nature Fun for All",
-     "viewers": "163"
+     "viewers": "116"
     },
     {
      "id": "aA9-nxILUH4",
      "title": "🔴 24/7 LIVE CAT TV NO ADS😺 Awesome Red Squirrels and Adorable Little Birds Forest Nut Party for All",
-     "viewers": "738"
+     "viewers": "364"
     },
     {
      "id": "PWJiDUUSNvs",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Unlimited Wild Birds and Squirrels at Autumn Festival",
-     "viewers": "608"
+     "viewers": "416"
     },
     {
      "id": "l8WwqwfVv_M",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Red Squirrels & Awesome Birds🕊️ Woodpeckers Bullfinches Starlings Siskins",
-     "viewers": "67"
+     "viewers": "60"
     },
     {
      "id": "dJVVcv9-ndg",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Midsummer Nut Party with Cutest Red Squirrels and Adorable Little Birds",
-     "viewers": "2K"
+     "viewers": "1.5K"
     },
     {
      "id": "UtzudWnHCaQ",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Non-Stop Birds and Cutest Red Squirrels at Garden Galore Buffet",
-     "viewers": "1.3K"
+     "viewers": "798"
     },
     {
      "id": "UEyEs8AE1ss",
      "title": "🔴24/7 LIVE CAT TV NO ADS😺 Squirrel and Bird Watching: Unlimited Nature Fun for Everyone",
-     "viewers": "2.2K"
+     "viewers": "2.1K"
     },
     {
      "id": "UXrk42u8tnw",
      "title": "🔴24/7 CAT TV NO ADS 😺 Little Birds and Red Squirrels and Nature Fun for Everyone",
-     "viewers": "81"
+     "viewers": "57"
     },
     {
      "id": "EvsLqQS_80E",
      "title": "🔴24/7 LIVE Cat TV😺 Non-Stop BIRDS and Squirrels in Relaxing Forest Corner",
-     "viewers": "179"
+     "viewers": "162"
     }
    ],
    "ok": true
@@ -252,12 +242,12 @@
     {
      "id": "0-RTk1cQ3lU",
      "title": "🔴 LIVE! 24 Hours of Unlikely Animal Friends Livestream 😻🐶 | Nat Geo Kids",
-     "viewers": "28"
+     "viewers": "16"
     },
     {
      "id": "q5xC6wv9Ut0",
      "title": "🔴 LIVE! 24 Hours of Relaxing Animal Journeys!🦓✌️🐧 | Nat Geo Kids",
-     "viewers": "146"
+     "viewers": "119"
     }
    ],
    "ok": true
@@ -271,7 +261,7 @@
     {
      "id": "AKlYVC4MF0I",
      "title": "LIVE 🍿 Zoboomafoo with the Kratt Brothers!",
-     "viewers": "30"
+     "viewers": "27"
     }
    ],
    "ok": true
@@ -287,37 +277,37 @@
     {
      "id": "OOT6YlOYgaU",
      "title": "Kitten Rescue Cat Cam powered by EXPLORE.org",
-     "viewers": "71"
+     "viewers": "111"
     },
     {
      "id": "J7ZrIDvqlic",
      "title": "LIVE Brooks Falls - Katmai National Park, Alaska 2026 | explore.org",
-     "viewers": "424"
+     "viewers": "767"
     },
     {
      "id": "0P_LBKqVbfs",
      "title": "LIVE Elephant Cam: Tembe Elephant Park - South Africa - Africam | explore.org",
-     "viewers": "45"
+     "viewers": "20"
     },
     {
      "id": "Fz6sl9YJZE0",
      "title": "Underwater Manatee Cam At Homosassa Springs | Fall in love with the beloved sea cows! | explore.org",
-     "viewers": "28"
+     "viewers": "23"
     },
     {
      "id": "GGIE1E-kaMQ",
      "title": "Decorah Eagles - North Nest - 4k powered by EXPLORE.org",
-     "viewers": "34"
+     "viewers": "23"
     },
     {
      "id": "5e4lsEe4Vew",
      "title": "International Wolf Center North Camera powered by EXPLORE.org",
-     "viewers": "33"
+     "viewers": "32"
     },
     {
      "id": "DHUnz4dyb54",
      "title": "Tropical Reef Camera powered by EXPLORE.org",
-     "viewers": "142"
+     "viewers": "185"
     }
    ],
    "ok": true
@@ -331,12 +321,12 @@
     {
      "id": "EbdnE0I_Aoo",
      "title": "Live Wildlife Camera at Nimali Tarangire | Private Conservancy, Tanzania",
-     "viewers": "16"
+     "viewers": "8"
     },
     {
      "id": "ljLeMq_KXpY",
      "title": "Live Wildlife Camera at The Hide | Hwange Waterhole, Zimbabwe",
-     "viewers": "12"
+     "viewers": "6"
     },
     {
      "id": "EdDdTrahHjI",
@@ -346,87 +336,87 @@
     {
      "id": "lPVH-2QMgtk",
      "title": "LIVE: Campi ya Kanzi Waterhole | Mount Kilimanjaro, Kenya",
-     "viewers": "22"
+     "viewers": "7"
     },
     {
      "id": "i12eS_2YV-s",
      "title": "LIVE From Angama Amboseli | Wildlife Beneath Kilimanjaro",
-     "viewers": "4"
+     "viewers": "1"
     },
     {
      "id": "m4cAV-_7YpY",
      "title": "LIVE from Deteema Springs | Hwange National Park, Zimbabwe",
-     "viewers": "9"
+     "viewers": "1"
     },
     {
      "id": "Njur5IV7icE",
      "title": "Live from Angama Mara | Maasai Mara, Kenya",
-     "viewers": "3"
+     "viewers": ""
     },
     {
      "id": "5dhmXmUD1ZE",
      "title": "LIVE from Porini Rhino Camp | Ol Pejeta Conservancy, Kenya",
-     "viewers": "1"
+     "viewers": ""
     },
     {
      "id": "sQAhSkjRKGk",
      "title": "Live Safari from Nkorho Bush Lodge | 24/7 Wildlife in Sabi Sand, South Africa",
-     "viewers": "3"
+     "viewers": "1"
     },
     {
      "id": "ACc7IkdOF-Y",
      "title": "Mara River LIVE: Fig Tree Crossing Wildebeest Migration Cam",
-     "viewers": "25"
+     "viewers": "12"
     },
     {
      "id": "-rXriX4SiQk",
      "title": "Wilderness Linkwasha LIVE Cam | Hwange Waterhole 24/7 Wildlife Stream",
-     "viewers": "5"
+     "viewers": "2"
     },
     {
      "id": "XyPU5-pNg5E",
      "title": "Live from Tortilis Camp | Amboseli Waterhole with Mount Kilimanjaro",
-     "viewers": "7"
+     "viewers": "2"
     },
     {
      "id": "BaEFc79IMCA",
      "title": "LIVE: Mara River Main Crossing | Masai Mara Wildlife Cam 24/7",
-     "viewers": "9"
+     "viewers": "2"
     },
     {
      "id": "zqc0Z2oWmo8",
      "title": "Ulusaba Live Wildlife Camera | Sabi Sand, South Africa",
-     "viewers": "4"
+     "viewers": "3"
     },
     {
      "id": "qpukdDslCjk",
      "title": "Wild Africa Live!  24/7 Safari Cam | Watch Lions, Elephants & More",
-     "viewers": "84"
+     "viewers": "47"
     },
     {
      "id": "QGvjAPzImR8",
      "title": "Cat Eye LIVE Camera | Naledi Lodge, Greater Kruger Park",
-     "viewers": "1"
+     "viewers": "4"
     },
     {
      "id": "ZVRUiKmCs84",
      "title": "Kalahari Salt Pan | Conservation Live Cam",
-     "viewers": "16"
+     "viewers": "3"
     },
     {
      "id": "zh5QHh9prA0",
      "title": "Simbavati Waterside Live Wildlife Camera | Klaserie Reserve, South Africa",
-     "viewers": "5"
+     "viewers": "2"
     },
     {
      "id": "vEEGzyCvL8Q",
      "title": "The Basin Live Hide Cam | By Selinda Camp | Botswana",
-     "viewers": "3"
+     "viewers": "2"
     },
     {
      "id": "2EZavJUNdLI",
      "title": "Twin Pan Live Hide Cam | Zarafa Camp | Selinda Reserve, Botswana",
-     "viewers": "6"
+     "viewers": "8"
     },
     {
      "id": "jIh2FYqMOw0",
@@ -436,12 +426,12 @@
     {
      "id": "Xe9CPAdyAro",
      "title": "Finch Hattons Live Wildlife Camera | Tsavo National Park",
-     "viewers": "4"
+     "viewers": "1"
     },
     {
      "id": "ZWhvO6R37ck",
      "title": "Mahali Mzuri Lodge Live Cam | Maasai Mara, Kenya",
-     "viewers": "5"
+     "viewers": "2"
     },
     {
      "id": "RZFMYVNhd4k",
@@ -451,12 +441,12 @@
     {
      "id": "gdrNUUf-cQw",
      "title": "Tembe Elephant Park | Wildlife Live Stream",
-     "viewers": "81"
+     "viewers": "24"
     },
     {
      "id": "mk02pEy3FdA",
      "title": "Camelthorn Waterhole Live - Zebra Migration, Hippos & More | Botswana",
-     "viewers": "21"
+     "viewers": "4"
     },
     {
      "id": "-q7PIgn8YLY",
@@ -476,7 +466,7 @@
     {
      "id": "C9hjksOtngo",
      "title": "Roy’s Dam LIVE Cam | Big 5 Wildlife in Sabi Sand, South Africa",
-     "viewers": "3"
+     "viewers": "2"
     }
    ],
    "ok": true
@@ -490,37 +480,37 @@
     {
      "id": "wTVDrtShk7Y",
      "title": "Live Boreal Birds at the Ontario FeederWatch Cam! Cornell Lab | Powered by Perky-Pet",
-     "viewers": "90"
+     "viewers": "78"
     },
     {
      "id": "J7HO0dkkomE",
      "title": "Hellgate Ospreys Nest Cam | Cornell Lab | University of Montana",
-     "viewers": "6"
+     "viewers": "13"
     },
     {
      "id": "Mm_zVDDUeNA",
      "title": "Northern Royal Albatross Cam - NZ Dept. of Conservation #RoyalCam | Cornell Lab",
-     "viewers": "29"
+     "viewers": "101"
     },
     {
      "id": "0xFARCdZ3vA",
      "title": "Colorful Tropical Hummingbirds at the Panama Hummingbird Feeder Cam at Canopy Tower | Cornell Lab",
-     "viewers": "35"
+     "viewers": "43"
     },
     {
      "id": "afsaYKQ3vac",
      "title": "Cornell Red-tailed Hawks Live Cam - #CornellHawks | Cornell Lab",
-     "viewers": "9"
+     "viewers": "7"
     },
     {
      "id": "x10vL6_47Dw",
      "title": "🔴 Live Cornell Lab FeederWatch Cam 🔴 at Sapsucker Woods",
-     "viewers": "960"
+     "viewers": "444"
     },
     {
      "id": "WtoxxHADnGk",
      "title": "Live Tropical Birds at the Panama Fruit Feeder Cam at Canopy Lodge | Cornell Lab",
-     "viewers": "83"
+     "viewers": "75"
     }
    ],
    "ok": true
@@ -534,22 +524,22 @@
     {
      "id": "QL0FuXqD1Fk",
      "title": "Namibia: Kwando river live stream",
-     "viewers": "7"
+     "viewers": "6"
     },
     {
      "id": "ME0dPuBtzug",
      "title": "Namibia: Live stream in the Kalahari Desert",
-     "viewers": "12"
+     "viewers": "8"
     },
     {
      "id": "AeMUdOPFcXI",
      "title": "Namibia: Live stream at the Okaukuejo waterhole in Etosha National Park, Namibia",
-     "viewers": "136"
+     "viewers": "120"
     },
     {
      "id": "ydYDqZQpim8",
      "title": "Namibia: Live stream in the Namib Desert",
-     "viewers": "617"
+     "viewers": "362"
     }
    ],
    "ok": true
@@ -563,7 +553,7 @@
     {
      "id": "SUXPnIEpbn4",
      "title": "Panda 24/7 HD Live At Chengdu Panda Base",
-     "viewers": "80"
+     "viewers": "73"
     }
    ],
    "ok": true
@@ -577,57 +567,57 @@
     {
      "id": "QWGYS9IOqYc",
      "title": "Live African Penguin Cam | Monterey Bay Aquarium",
-     "viewers": "14"
+     "viewers": "63"
     },
     {
      "id": "1VBPxAkaNDU",
      "title": "Live Coral Reef Cam | Monterey Bay Aquarium",
-     "viewers": "15"
+     "viewers": "129"
     },
     {
      "id": "AWJi0LgyA28",
      "title": "Live Aviary Cam | Monterey Bay Aquarium",
-     "viewers": "4"
+     "viewers": "7"
     },
     {
      "id": "zL68biE6wAs",
      "title": "Live Moon Jelly Cam | Monterey Bay Aquarium",
-     "viewers": "24"
+     "viewers": "130"
     },
     {
      "id": "eQ_foBERmzA",
      "title": "Live Jelly Cam | Monterey Bay Aquarium",
-     "viewers": "107"
+     "viewers": "691"
     },
     {
      "id": "n_GpVsz4nHU",
      "title": "Live Open Sea Cam | Monterey Bay Aquarium",
-     "viewers": "35"
+     "viewers": "49"
     },
     {
      "id": "fVa6-zCBR7A",
      "title": "Live Monterey Bay Cam | Monterey Bay Aquarium",
-     "viewers": "42"
+     "viewers": "137"
     },
     {
      "id": "dzmJXWmA2EM",
      "title": "Live Spider Crab Cam | Monterey Bay Aquarium",
-     "viewers": "9"
+     "viewers": "24"
     },
     {
      "id": "abbR-Ttd-cA",
      "title": "Live Sea Otter Cam | Monterey Bay Aquarium",
-     "viewers": "135"
+     "viewers": "230"
     },
     {
      "id": "w3LjpFhySTg",
      "title": "Live Kelp Forest Cam | Monterey Bay Aquarium",
-     "viewers": "98"
+     "viewers": "218"
     },
     {
      "id": "tEtg5Kg3voQ",
      "title": "Live Shark Cam | Monterey Bay Aquarium",
-     "viewers": "88"
+     "viewers": "343"
     }
    ],
    "ok": true
@@ -657,12 +647,12 @@
     {
      "id": "_KXHUb0wFRE",
      "title": "Sea Otter Cam 2 | Vancouver Aquarium",
-     "viewers": "130"
+     "viewers": "195"
     },
     {
      "id": "9mg9PoFEX2U",
      "title": "Sea Otter Cam | Vancouver Aquarium",
-     "viewers": "337"
+     "viewers": "454"
     }
    ],
    "ok": true
@@ -748,12 +738,12 @@
     {
      "id": "41eq4VzCYc4",
      "title": "Big Bear Bald Eagle Wide View - Cam 2",
-     "viewers": "12"
+     "viewers": "1K"
     },
     {
      "id": "B4-L2nfGcuE",
      "title": "Big Bear Bald Eagle Live Nest - Cam 1",
-     "viewers": "3.1K"
+     "viewers": "4.1K"
     }
    ],
    "ok": true
@@ -772,32 +762,32 @@
     {
      "id": "x0CloLdk44g",
      "title": "LIVE Muttville Wagcam From a Dog's View | explore.org",
-     "viewers": "1"
+     "viewers": "2"
     },
     {
      "id": "RIgiw5FP5Rc",
      "title": "Live Muttville Outdoor Playland | explore.org",
-     "viewers": ""
+     "viewers": "2"
     },
     {
      "id": "Qeq2Kax0v64",
      "title": "Full House Puppy Cam at Warrior Canine Connection powered by EXPLORE.org",
-     "viewers": "39"
+     "viewers": "50"
     },
     {
      "id": "V5RfI6dXZgY",
      "title": "ECAD Class Is In Session powered by EXPLORE.org",
-     "viewers": ""
+     "viewers": "1"
     },
     {
      "id": "h-Z0wCdD3dI",
      "title": "Puppy Playroom at Warrior Canine Connection powered by EXPLORE.org",
-     "viewers": "78"
+     "viewers": "76"
     },
     {
      "id": "QdEVb1rheRE",
      "title": "Guide Dogs of America Nursery Cam powered by EXPLORE.org",
-     "viewers": "2"
+     "viewers": "3"
     },
     {
      "id": "QF2ojZmSTWs",
@@ -816,7 +806,7 @@
     {
      "id": "NqOmHpwMUxs",
      "title": "Live sea otter / fur seal cam - Seattle Aquarium",
-     "viewers": "37"
+     "viewers": "129"
     }
    ],
    "ok": true
@@ -830,7 +820,7 @@
     {
      "id": "-K-VxA6v7QM",
      "title": "Animal Ambassador 24/7 Live Cams - Alveus Sanctuary",
-     "viewers": "356"
+     "viewers": "357"
     }
    ],
    "ok": true
@@ -857,6 +847,11 @@
    "category": "wildlife",
    "kind": "shows",
    "videos": [
+    {
+     "id": "_9bmrDZRsmo",
+     "title": "The Giant Fish That Rises From The Deep | Blue Planet III | 4k | BBC Earth",
+     "published": "2026-11-10T15:00:24+00:00"
+    },
     {
      "id": "TYWla3oaNaw",
      "title": "The Incredible World Of Desert Wildlife | 4K UHD | BBC Earth",
@@ -926,11 +921,6 @@
      "id": "Vn5xZSZc_Uw",
      "title": "The Greatest Fights In The Animal Kingdom Part 8 | BBC Earth",
      "published": "2026-10-22T15:00:12+00:00"
-    },
-    {
-     "id": "_luIFyVeko8",
-     "title": "Protecting the pollinators 🐝 #BBCEarth #FixingThePlanet #Nature #Biodiversity #Shorts",
-     "published": "2026-10-22T14:00:11+00:00"
     }
    ],
    "ok": true
@@ -948,7 +938,7 @@
     },
     {
      "id": "_5nOeUOseHM",
-     "title": "Hammerhead Highway (Full Episode) | OceanXplorers | Nat Geo Animals",
+     "title": "Navigating the Hammerhead Highway (Full Episode) | OceanXplorers | Nat Geo Animals",
      "published": "2026-11-08T12:00:28+00:00"
     },
     {
@@ -1026,6 +1016,16 @@
    "kind": "shows",
    "videos": [
     {
+     "id": "nnm00Jb9-AE",
+     "title": "Starving Dog Gets Fed Treats | Pit Bulls & Parolees | Animal Planet",
+     "published": "2026-11-10T17:00:29+00:00"
+    },
+    {
+     "id": "C0ER2P6OiQs",
+     "title": "🔴 WATCH NOW: Jeremy Wades Through Asia | River Monsters | Animal Planet",
+     "published": "2026-11-10T00:05:18+00:00"
+    },
+    {
      "id": "LwZGzLdvGJI",
      "title": "Treehouses Best Fit For a Family! | Treehouse Masters | Animal Planet",
      "published": "2026-11-09T20:00:32+00:00"
@@ -1089,16 +1089,6 @@
      "id": "DwgywgEw_Yw",
      "title": "Jeremy Wade UNCOVERS the Amazon Apocalypse! | River Monsters | Animal Planet",
      "published": "2026-10-28T22:00:20+00:00"
-    },
-    {
-     "id": "wejUA5FG3LQ",
-     "title": "Steve Irwins Explores the WILDS of AFRICA! | The Crocodile Hunter | Animal Planet",
-     "published": "2026-10-27T16:00:06+00:00"
-    },
-    {
-     "id": "1izoYLz2wI0",
-     "title": "Carving Pumpkins for Pups! | Pit Bulls & Parolees | Animal Planet",
-     "published": "2026-10-27T15:00:15+00:00"
     }
    ],
    "ok": true
@@ -1435,9 +1425,19 @@
    "kind": "shows",
    "videos": [
     {
-     "id": "xR0ko25E65I",
-     "title": "SafariLIVE Sunset - Repeat - 10 November  2026",
-     "published": "2026-11-09T13:47:54+00:00"
+     "id": "GcXjHoCre_8",
+     "title": "SafariLIVE Sunset - 11 November  2026",
+     "published": "2026-11-10T14:23:17+00:00"
+    },
+    {
+     "id": "-ZldEtjtaFo",
+     "title": "SafariLIVE Sunrise - 11 November 2026",
+     "published": "2026-11-10T14:22:30+00:00"
+    },
+    {
+     "id": "U_X1p87j2Vk",
+     "title": "LIVE at the waterhole - 11 November 2026",
+     "published": "2026-11-10T14:20:08+00:00"
     },
     {
      "id": "gWmPexXD3Lw",
@@ -1498,16 +1498,6 @@
      "id": "BRGc4SEnCn0",
      "title": "The ultimate rhino jackpot - SafariLIVE Sunset - 06 November 2026",
      "published": "2026-11-06T20:00:18+00:00"
-    },
-    {
-     "id": "2AMY-toJE_g",
-     "title": "Black rhino vs. hippo - SafariPlus",
-     "published": "2026-11-06T17:00:08+00:00"
-    },
-    {
-     "id": "_hksPp8y_GM",
-     "title": "LIVE at the waterhole - 06 November 2026",
-     "published": "2026-11-06T12:06:02+00:00"
     }
    ],
    "ok": true
@@ -1939,6 +1929,26 @@
    "kind": "shows",
    "videos": [
     {
+     "id": "2FqKS8_Ofzc",
+     "title": "Dog Who Was Locked Away Finally Gets To Run Free | The Dodo",
+     "published": "2026-11-10T22:00:12+00:00"
+    },
+    {
+     "id": "pZioTLBuimA",
+     "title": "Uber Driver Has Been Bringing His Dog To Work Every Day For 7 Years | The Dodo",
+     "published": "2026-11-10T18:00:36+00:00"
+    },
+    {
+     "id": "0elbJCxF6HA",
+     "title": "Parrot's Love Of Biggie Smalls Helps Solve Mystery Of His Past | The Dodo",
+     "published": "2026-11-10T16:00:23+00:00"
+    },
+    {
+     "id": "BlipqYJzhmg",
+     "title": "Bears Rescued From Bile Farms Turn Into Giant Mischievous Puppies | The Dodo",
+     "published": "2026-11-10T14:00:31+00:00"
+    },
+    {
      "id": "pdDezb5C62A",
      "title": "Angry Owl Refuses To Cooperate With Woman Trying To Rescue Her | The Dodo",
      "published": "2026-11-10T12:00:24+00:00"
@@ -1992,26 +2002,6 @@
      "id": "Umdr6KbuvG8",
      "title": "Woman Buys Her Anxious Dog A Fake Man So She Can Leave The House | The Dodo",
      "published": "2026-11-08T12:00:28+00:00"
-    },
-    {
-     "id": "fVC-V3b2Z28",
-     "title": "Police Officer Rescues Tiny Kitten Who Waits For Him The Next Day | The Dodo",
-     "published": "2026-11-07T22:00:32+00:00"
-    },
-    {
-     "id": "OIcA0iE-DNw",
-     "title": "Abandoned Cat Keeps Returning To Her Old Home Looking For Her Family | The Dodo",
-     "published": "2026-11-07T18:00:09+00:00"
-    },
-    {
-     "id": "gllDsr9Tn9o",
-     "title": "Dog Refuses To Leave The Spot Where He Last Saw His Dad | The Dodo",
-     "published": "2026-11-07T16:00:01+00:00"
-    },
-    {
-     "id": "vsUQzt7UQ_E",
-     "title": "Wolf Mates Who Didn't Belong In The Wild Refuse To Be Separated | The Dodo",
-     "published": "2026-11-07T14:00:25+00:00"
     }
    ],
    "ok": true
@@ -2022,6 +2012,11 @@
    "category": "pets",
    "kind": "shows",
    "videos": [
+    {
+     "id": "hUSWe-aYlPg",
+     "title": "Frogs Have Hilarious Reaction to Water Spray",
+     "published": "2026-11-10T16:00:06+00:00"
+    },
     {
      "id": "pw0dK8y0bSU",
      "title": "Feisty Little Crab Picks Fight with Scuba Diver Underwater",
@@ -2091,11 +2086,6 @@
      "id": "q3NfsOJFUeI",
      "title": "Can Someone Get This Poor Guy a Sandwich? #NationalSandwichDay 🐶🥪",
      "published": "2026-11-03T13:00:08+00:00"
-    },
-    {
-     "id": "3QcZ2RBMXg8",
-     "title": "Halloween Costume Contest Honorable Mentions!",
-     "published": "2026-11-03T02:07:34+00:00"
     }
    ],
    "ok": true
